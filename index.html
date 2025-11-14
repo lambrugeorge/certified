@@ -4,11 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Diplomas - Certified</title>
-    <script type="module" crossorigin src="./assets/index-CA0j9SJ-.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BCw_5NwB.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: white;
+        color: #333;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+        background: white;
+      }
+
+      .diploma-image {
+        width: 70%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .diploma-image {
+          width: 90%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .diploma-image {
+          width: 95%;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-
+    <div class="container">
+      <img src="./1.jpg" alt="Diploma 1" class="diploma-image" />
+      <img src="./2.jpg" alt="Diploma 2" class="diploma-image" />
+    </div>
   </body>
 </html>
